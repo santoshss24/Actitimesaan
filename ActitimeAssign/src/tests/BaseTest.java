@@ -48,7 +48,9 @@ public class BaseTest implements IAutoConstants
 		driver.manage().timeouts().implicitlyWait(implicit, TimeUnit.SECONDS);
 		long explicit=Long.parseLong(ETO);
 		webactionUtil=new WebactionUtil(driver, explicit);
-		driver.get(APP_URL);	
+		
+		driver.get(APP_URL);
+		
 		}
 	
 		@Parameters({"un","pwd"})
@@ -68,7 +70,7 @@ public class BaseTest implements IAutoConstants
 				homepage.logout();
 			}
 		}
-		@AfterClass(alwaysRun=true)
+		@AfterClass(enabled=false)
 		public void closeApp()
 		{
 			driver.quit();

@@ -14,19 +14,22 @@ public interface IAutoConstants {
 	String PROPERTYFILE_PATH="./datadriven/testdata.properties";
 			
 	String APP_URL="https://demo.actitime.com/login.do";
+	
 	String BROWSER_NAME="chrome";
 	
 	String USERNAME="admin";
 	String PASSWORD="manager";
 	
-	String CUSTOMER_NAME="sas";
+	String CUSTOMER_NAME="santosh";
 	String PROJECT_NAME="Actitime";
-	String TASK_NAME="Mailing";
+	String TASK_NAME="Trackin";
 	String ESTIMATE_TIME="5";
 	String DEADLINEMONTH="June";
 	String DEADLINEDATE="25";
 	String ITO="20";
 	String ETO="20";
+	
+	
 	
 			
 	
