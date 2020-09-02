@@ -4,10 +4,10 @@ import org.testng.annotations.Test;
 
 import pages.Homepage;
 
-public class TC002 extends BaseTest 
+public class TC006 extends BaseTest 
 {
 	@Test
-	public void hidingaTask()
+	public void addingCommentsToTask()
 	{
 		Homepage homepage=new Homepage(driver, webactionUtil);
 		homepage.clickOnCreateNewTaskButton();
@@ -18,12 +18,6 @@ public class TC002 extends BaseTest
 		homepage.enterKeysInEstimateTF(ESTIMATE_TIME);
 		homepage.enterdeadlineDate();
 		homepage.clickOnCreateTaskButton();
-		homepage.clickOnHideRow(TASK_NAME);
-		homepage.clickOnActionsButton();
-		homepage.clickOnTaskDelete();
-		homepage.clickOnDeleteTaskPermanently();
-		homepage.logout();
-		
+		homepage.EditTheCommentsOfTheParticularTask("Complete with Time", TASK_NAME);
 	}
-
 }

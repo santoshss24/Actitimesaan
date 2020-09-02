@@ -29,6 +29,10 @@ public class WebactionUtil
 		target.sendKeys(keysToSend);
 		
 	}
+	public void enterKeys(String keysToSend)
+	{
+		driver.switchTo().activeElement().sendKeys(keysToSend);
+	}
 	public void selectTextFromDropdown(WebElement target,String text)
 	{
 		Select select=new Select(target);
